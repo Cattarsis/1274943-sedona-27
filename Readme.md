@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Lyudmila Kuzina](https://up.htmlacademy.ru/htmlcss/27/user/1274943).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон Попов](https://htmlacademy.ru/profile/joker)
 
 ---
 
