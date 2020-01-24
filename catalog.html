@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+
+    <header>
+    	<!-- Главное меню -->
+      <nav>
+        <ul>
+          <li>
+          	<a href="info.html">Информация</a>
+          </li>
+          <li>
+          	<a href="media.html">Фото и видео</a>
+          </li>
+          <li>
+          	<a href="map.html">Карта штата</a>
+          </li>
+          <li>
+          	<a href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+      </nav>
+
+    	<!-- Логотип, по ТЗ является ссылкой на главную -->
+      <a href="index.html"><img src="img/index-logo.svg" width="50" height="30" alt="Логотип сайта города Седона"></a>
+    </header>
+
+    <main>
+      <!-- Форма фильтрации - будет позже -->
+
+      <!-- Найдено с цифрой - текст и, вероятно, результат запроса к БД, пока сделано в виде текста  -->
+      <p>Найдено: 3</p>
+
+      <!-- Сортировка - текст и кнопки --->
+      <section>
+        <p>Сортировка:</p>
+        <button type="button">По цене</button>
+        <button type="button">По типу</button>
+        <button type="button">По рейтингу</button>
+        <!-- Стрелочки возрастание/убывание, вероятно, тоже кнопки, пока текстовые --->
+        <button type="button">По возрастанию</button>
+        <button type="button">По убыванию</button>
+      </section>      
+
+      <!-- Отели - article, внутри семантические картинки, текстовое описание, кнопки Подробнее и Забронировать, рейтинг в цифрах - текст, вероятно тянется из БД, рейтинг в звездах - картинки без семантики -->
+      <section>
+        <article>
+          <figure>
+            <img src="img/amara.jpg" width="135" height="90" alt="Фото гостиницы Amara Resort & SPA">
+          </figure>
+          <p>Amara Resort & SPA</p>
+          <p>Гостиница</p>
+          <p>От 4000р.</p>
+          <p>Рейтинг: 8,5</p>
+          <button type="button">Подробнее</button>
+          <button type="button">Забронировать</button>
+        </article>
+        <article>
+          <figure>
+            <img src="img/desert.jpg" width="135" height="90" alt="Фото мотеля Desert Quail Inn">
+          </figure>
+          <p>Desert Quail Inn</p>
+          <p>Мотель</p>
+          <p>От 3000р.</p>
+          <p>Рейтинг: 8,9</p>
+          <button type="button">Подробнее</button>
+          <button type="button">Забронировать</button>
+        </article>
+        <article>
+          <figure>
+            <img src="img/villas.jpg" width="135" height="90" alt="Фото апартаментов Villas at poco diablo">
+          </figure>
+          <p>Villas at poco diablo</p>
+          <p>Апартаменты</p>
+          <p>От 2000р.</p>
+          <p>Рейтинг: 9,2</p>
+          <button type="button">Подробнее</button>
+          <button type="button">Забронировать</button>
+        </article>
+      </section>
+
+
+    </main>
+
+    <footer>
+      <!-- Тэг, телефон - текст, абзац -->
+      <div>
+        <p>#visitsedona</p>
+        <p>Тел. +7(495) 666-02-66</p>
+      </div>
+
+      <!-- Соцсети - список ссылок-картинок -->
+      <div>
+      <ul>
+          <li>
+            <a href="#">VK</a>
+          </li>
+          <li>
+            <a href="#">Facebook</a>
+          </li>
+          <li>
+            <a href="#">YouTube</a>
+          </li>
+      </ul>
+      </div>
+
+      <!-- Website by - абзац и ссылка -->
+      <p>Website by <a href="https://htmlacademy.ru">HTML Academy</a></p>
+
+    </footer>
+
+  </body>
+</html>
