@@ -103,27 +103,31 @@
 
           <!-- Черновой вариант, поля имеют тип "Дата" и "Количество" для функциональности, но возможно они нужны только как элементы дизайна -->
 
-          <div>
+          <p>
             <label for="date-in-field">Дата заезда</label>
-            <input type="date" id="date-in-field" name="date-in" value="17.04.2020">
-          </div>
+            <input type="date" id="date-in-field" name="date-in" value="2017-04-24">
+          </p>
 
-          <div>
+          <p>
             <label for="date-out-field">Дата выезда</label>
-            <input type="date" id="date-out-field" name="date-out">
-          </div>
+            <input type="date" id="date-out-field" name="date-out" value="2017-07-04">
+          </p>
 
-          <div>
+          <p>
             <label for="adult-field">Взрослые</label>
+            <button type="submit">-</button>
             <input type="number" id="adult-field" name="adult" value="2">
-          </div>
+            <button type="submit">+</button>
+          </p>
 
-          <div>
+          <p>
             <label for="children-field">Дети</label>
-            <input type="number" id="children-field" name="children">
-          </div>
+            <button type="submit">-</button>
+            <input type="number" id="children-field" name="children" value="0">
+            <button type="submit">+</button>
+          </p>
 
-          <a href="">Найти</a>
+          <button type="submit">Найти</button>
 
         </form>
 
