@@ -1,0 +1,265 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: #000000;
+  font-weight: 700;
+}
+
+.site-navigation a:hover,
+.user-navigation a:hover {
+  color: #81b3d2;
+}
+
+.site-navigation a:focus,
+.user-navigation a:focus {
+  color: rgba(0, 0, 0, 0.3)
+}
+
+/* Не работает по непонятным причинам*/
+.main-header-welcome {
+  background-image: url("img/background-photo.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+
+h2 {
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.features h3 {
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.features {
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.feature-item {
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+}
+
+
+.feature-item-highlights {
+  color: #ffffff;
+  background-color: #81b3d2;
+ }
+
+.hotel-search {
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.hotel-search h3 {
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.hotel-search-form {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.hotel-search-header {
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  background-color: #766357;
+}
+
+.hotel-search-header:hover {
+  background-color: #604e43;
+}
+
+.hotel-search-header:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
+}
+
+.hotel-search-form input {
+  background-color: #f2f2f2;
+}
+
+.hotel-search-form input:hover {
+  background-color: #ebebeb;
+}
+
+.hotel-search-form input:active {
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff;
+}
+
+.button-search {
+  font-size: 21px;
+  color: #ffffff;
+  background-color: #81b3d2;
+  border: none;
+}
+
+.button-search:hover {
+  background-color: #669ec0;
+}
+
+.button-search:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+.main-footer {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.footer-contacts {
+  font-size: 21px;
+  line-height: 26px;
+  text-align: left;
+
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social li {
+  list-style: none;
+}
+
+.social-button {
+  color: #000000;
+}
+
+.footer-copyright {
+  text-align: right;
+}
+
+
+
+/*catalog*/
+
+.site-navigation .current-page {
+  color: #766357;
+}
+
+/*тоже не удается подключить фоновое изображение,
+а белый цвет применяется к обводке файлдсетов вместо текста */
+.hotel-filter-form {
+  color: #000000;
+  background-image: url("img/filter-background.jpg");
+  background-color: #766357;
+}
+
+.hotel-filter-form fieldset {
+  border: none;
+}
+
+.catalog-page h3 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.sorting {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+/*подчеркивание должно быть голубым,
+как цвет активной ссылки*/
+.sorting a {
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: underline dotted;
+}
+
+.sorting .active{
+  color: #81b3d2;
+  text-decoration: none;
+}
+
+.hotels-result p {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+/*кнопки получаются меньше,
+хотя размеры по макету*/
+.hotels-result a {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  width: 110px;
+  height: 27px;
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+
+.hotels-result a:hover {
+  background-color: #669ec0;
+}
+
+
+/*кнопка не возвращается
+к исходному цвету после отпускания*/
+.hotels-result a:focus {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.hotels-result .booking-button {
+  width: 142px;
+  height: 27px;
+  background-color: #766357;
+}
+
+.hotels-result .booking-button:hover {
+  background-color: #604e43;
+}
+
+.hotels-result .booking-button:focus {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
