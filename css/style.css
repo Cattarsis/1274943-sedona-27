@@ -1,6 +1,8 @@
 body {
-  margin: 0;
-  padding: 0;
+  margin: auto;
+
+  width: 1200px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
   font-family: "PT Sans Narrow", Arial, sans-serif;
   font-size: 14px;
@@ -11,27 +13,47 @@ body {
   background-color: #ffffff;
 }
 
+.main-header {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-header-logo {
+  position: absolute;
+  left: 530px;
+  top: 0;
+}
+
 a {
   text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+p {
+  text-align: center;
 }
 
 .main-navigation {
-  font-size: 14px;
   line-height: 26px;
-  color: #000000;
-
   background-color: #ffffff;
+  position: relative;
 }
 
-.site-navigation,
-.user-navigation {
+.site-navigation {
+  width: 1200px;
   list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-around;
 }
 
 .site-navigation a,
 .user-navigation a {
   color: #000000;
   font-weight: 700;
+  display: block;
 }
 
 .site-navigation a:hover,
@@ -44,11 +66,17 @@ a {
   color: rgba(0, 0, 0, 0.3)
 }
 
-/* Не работает по непонятным причинам*/
+/*Трехслойный бэкграунд.
+Непонятно, как позиционировать*/
 .main-header-welcome {
-  background-image: url("img/background-photo.jpg");
-  background-position: top center;
+  width: 1200px;
+  background-image: url("../img/polygon.png"), url("../img/welcome.svg"), url("../img/background-photo.jpg");
   background-repeat: no-repeat;
+  min-height: 753px;
+  background-size: 1200px 59px, 459px 353px, 1200px 773px;
+
+  /*и цвет не подключается*/
+  background-color: #6ca485;
 }
 
 
@@ -56,12 +84,18 @@ h2 {
   font-size: 21px;
   line-height: 26px;
   text-align: center;
+  width: 440px;
+  display: flex;
+  margin: 61px auto 38px auto;
+}
+
+.features p {
+  font-size: 14px;
 }
 
 .features h3 {
   font-size: 21px;
   line-height: 21px;
-  text-align: center;
 }
 
 .features {
@@ -76,16 +110,107 @@ h2 {
   text-align: center;
 }
 
-
 .feature-item-highlights {
   color: #ffffff;
   background-color: #81b3d2;
+  display: flex;
  }
 
-.hotel-search {
+.wrapper-feature-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper-feature {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 20px;
+  margin-bottom: 85px;
+}
+
+
+/*Все 3 фичи с пиктограммами
+сделаны отдельными классами,
+вероятно надо по-другому*/
+.home {
+  background-image: url("../img/icon-home.svg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  margin-top: 30px;
+  width: 252px;
+}
+
+.home h3 {
+  margin-top: 101px;
+}
+
+.burger {
+  background-image: url("../img/icon-burger.svg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  margin-top: 30px;
+  width: 284px;
+}
+
+.burger h3 {
+  margin-top: 101px;
+}
+
+.gift {
+  background-image: url("../img/icon-gift.svg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  margin-top: 30px;
+  width: 273px;
+}
+
+.gift h3 {
+  margin-top: 101px;
+}
+
+.block2 {
+  background-color: #eeeeee;
+  margin-left: 0px;
+}
+
+/*ширина для колонок в последней строке фич
+Получилось что у всех 3 строк в блоке разная,
+поэтому они разъехались
+*/
+.block2 :nth-child(1) {
+    width: 208px;
+}
+
+.block2 :nth-child(2) {
+    width: 262px;
+}
+
+.block2 :nth-child(3) {
+    width: 246px;
+}
+
+/*Не получается вставить карту фоном для формы,
+она либо принимает размеры формы,
+*/
+.hotel-search-form {
   font-size: 14px;
   line-height: 21px;
   text-align: center;
+  display: flex;
+  width: 568px;
+  margin: 52px auto 78px auto;
+  /*background-color: #6ca485;
+  background-image: url(../img/map.png);*/
+}
+
+/*...либо форма теряет свой контур*/
+.wrapper-search-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 568px;
+  margin: 52px auto 78px auto;
+
 }
 
 .hotel-search h3 {
@@ -150,6 +275,8 @@ h2 {
 .main-footer {
   color: #000000;
   background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
 }
 
 .footer-contacts {
@@ -169,6 +296,13 @@ h2 {
 
 .social-button {
   color: #000000;
+}
+
+/*иконка соцсети не прицепилась бэкграундом*/
+.tw {
+  background-image: url(../img/twitter.svg);
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 .footer-copyright {

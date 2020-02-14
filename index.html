@@ -35,13 +35,8 @@
 
       <!-- Фоновое изображение с горами - декоративное, будет позже -->
 
-      <!-- Изображение со слоганом на английском - декоративное, будет позже -->
-      <img src="img/welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону!">
-
-
-
-      <!-- Слоган на русском - текст, абзац заменен на заголовок-->
-      <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+      <!-- Изображение со слоганом на английском - декоративное, будет позже
+      <img src="img/welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону!"> -->
 
 
     </header>
@@ -49,65 +44,78 @@
     <main>
 
       <section class="features">
+        <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
 
           <!-- Названия классов больше связаны с внешним видом, чем со смыслом -->
           <article class="feature-item feature-item-highlights">
-            <h3>Настоящий городок</h3>
-            <p> - №1 -</p>
-            <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+            <div class="wrapper-feature-text">
+              <h3>Настоящий городок</h3>
+              <p> - №1 -</p>
+              <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
             <img src="img/feature-picture1.jpg" width="800" height="256" alt="Фото жизни города Седона">
           </article>
 
 
            <!-- Пиктограммы попробовать сделать псевдоэлементами ::before -->
-          <article class="feature-item">
-            <h3>Жильё</h3>
-            <p>Рекомендуем пожить в настоящем мотеле, как в кино!</p>
-          </article>
-          <article class="feature-item">
-            <h3>Еда</h3>
-            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-          </article>
-          <article class="feature-item">
-            <h3>Сувениры</h3>
-            <p>Не только китайского, но и местного производства!</p>
-          </article>
+          <div class="wrapper-feature block1">
+            <article class="feature-item home">
+              <h3>Жильё</h3>
+              <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            </article>
+            <article class="feature-item burger">
+              <h3>Еда</h3>
+              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </article>
+            <article class="feature-item gift">
+              <h3>Сувениры</h3>
+              <p>Не только китайского, но и местного производства!</p>
+            </article>
+          </div>
 
           <article class="feature-item feature-item-highlights">
             <img src="img/feature-picture2.jpg" width="800" height="256" alt="Фото Моста Дьявола в городе Седона">
-            <h3>Там есть мост дьявола</h3>
-            <p>- №2 -</p>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            <div class="wrapper-feature-text">
+              <h3>Там есть мост дьявола</h3>
+              <p>- №2 -</p>
+              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
           </article>
-          <article class="feature-item">
-            <h3>Небольшая площадь</h3>
-            <p>- №3 -</p>
-            <p>Все достопримечательности находятся очень близко</p>
-          </article>
-          <article class="feature-item">
-            <h3>Красивая дорога</h3>
-            <p>- №4 -</p>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </article>
-          <article class="feature-item">
-            <h3>Мало туристов</h3>
-            <p>- №5 -</p>
-            <p>Большинство едет в Гранд Каньон и толпится там</p>
-          </article>
+
+          <div class="wrapper-feature block2">
+            <article class="feature-item">
+              <div class="wrapper-feature-text">
+                <h3>Небольшая площадь</h3>
+                <p>- №3 -</p>
+                <p>Все достопримечательности находятся очень близко</p>
+              </div>
+            </article>
+            <article class="feature-item">
+              <div class="wrapper-feature-text">
+                <h3>Красивая дорога</h3>
+                <p>- №4 -</p>
+                <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              </div>
+            </article>
+            <article class="feature-item">
+              <div class="wrapper-feature-text">
+                <h3>Мало туристов</h3>
+                <p>- №5 -</p>
+                <p>Большинство едет в Гранд Каньон и толпится там</p>
+              </div>
+            </article>
+          </div>
 
       </section>
 
-      <!-- Заинтересовались? - абзац заменен на заголовок -->
       <section class="hotel-search">
         <h3>Заинтересовались?</h3>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 
-        <!-- Поиск гостиницы - форма -->
         <form method="post" class="hotel-search-form">
+          <div class="wrapper-search-form">
           <h3 class="hotel-search-header">Поиск гостиницы в Седоне</h3>
-
-          <!-- Черновой вариант, поля имеют тип "Дата" и "Количество" для функциональности, но возможно они нужны только как элементы дизайна -->
 
           <p>
             <label for="date-in-field">Дата заезда</label>
@@ -121,19 +129,21 @@
 
           <p>
             <label for="adult-field">Взрослые</label>
-            <button type="submit" class="button-less">-</button>
+            <button type="button" class="button-less">-</button>
             <input type="number" id="adult-field" name="adult" value="2">
-            <button type="submit" class="button-more">+</button>
+            <button type="button" class="button-more">+</button>
           </p>
 
           <p>
             <label for="children-field">Дети</label>
-            <button type="submit" class="button-less">-</button>
+            <button type="buttont" class="button-less">-</button>
             <input type="number" id="children-field" name="children" value="0">
-            <button type="submit" class="button-more">+</button>
+            <button type="button" class="button-more">+</button>
           </p>
 
           <button type="submit" class="button-search">Найти</button>
+
+        </div>
 
         </form>
 
@@ -152,13 +162,13 @@
       </div>
       <ul class="footer-social">
           <li>
-            <a class="social-button" href="#">VK</a>
+            <a class="social-button tw" href="#">Twitter</a>
           </li>
           <li>
-            <a class="social-button" href="#">Facebook</a>
+            <a class="social-button fb" href="#">Facebook</a>
           </li>
           <li>
-            <a class="social-button" href="#">YouTube</a>
+            <a class="social-button yt" href="#">YouTube</a>
           </li>
       </ul>
       <p class="footer-copyright">Website by <a href="https://htmlacademy.ru">HTML Academy</a></p>
