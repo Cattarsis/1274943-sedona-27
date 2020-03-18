@@ -7,7 +7,7 @@ form.classList.add("hotel-search-hidden");
 butonHotelSearch.addEventListener("click", function (evt) {
   evt.preventDefault();
   form.width = form.width;
-  form.classList.toggle("hotel-search-show");
+  form.classList.toggle("hotel-search-hidden");
 
 });
 

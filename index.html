@@ -41,7 +41,9 @@
               <p> - №1 -</p>
               <p>Седона&nbsp;-&nbsp;не&nbsp;аттракцион&nbsp;для&nbsp;туристов, там&nbsp;течёт&nbsp;своя&nbsp;жизнь</p>
             </div>
-            <img src="img/feature-picture1.jpg" alt="Фото жизни города Седона" width="800" height="256">
+            <div class="feature-item-img">
+              <img src="img/feature-picture1.jpg" alt="Фото жизни города Седона"> <!-- width="800" height="256"> -->
+            </div>
           </article>
 
 
@@ -61,7 +63,9 @@
           </article>
 
           <article class="feature-item feature-item-highlights">
-            <img src="img/feature-picture2.jpg" alt="Фото Моста Дьявола в городе Седона" width="800" height="256">
+            <div class="feature-item-img">
+              <img src="img/feature-picture2.jpg" alt="Фото Моста Дьявола в городе Седона"><!--  width="800" height="256"> -->
+            </div>
             <div class="wrapper-feature-text">
               <h3>Там&nbsp;есть мост&nbsp;дьявола</h3>
               <p>- №2 -</p>
@@ -94,7 +98,7 @@
         <p>Укажите&nbsp;предполагаемые&nbsp;даты&nbsp;поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие&nbsp;предложения&nbsp;гостиниц&nbsp;в&nbsp;Седоне</p>
 
         <form method="post" class="hotel-search-form">
-          <h3 class="hotel-search-header">Поиск гостиницы в Седоне</h3>
+          <a href="hotel-search-page.html"><h3 class="hotel-search-header">Поиск гостиницы в Седоне</h3></a>
           <div class="wrapper-search-form">
             <p class="wrapper-date-in">
               <label for="date-in-field">Дата заезда:</label>
@@ -139,9 +143,9 @@
       </section>
 
       <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d635574.8256881663!2d-111.62160103244746!3d34.90195939903308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1583746152382!5m2!1sru!2sru" width="1200" height="473" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d635574.8256881663!2d-111.62160103244746!3d34.90195939903308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1583746152382!5m2!1sru!2sru"></iframe><!--  frameborder="0" style="border:0;" allowfullscreen="" -->
         <p>
-          <img class="map-image" src="img/map.png" width="1200" height="473" alt="Расположение города Седона">
+          <img class="map-image" src="img/map.png" alt="Расположение города Седона">
         </p>
       </div>
 
@@ -151,7 +155,7 @@
 
         <div class="footer-contacts">
           <p>#visitsedona</p>
-          <p>Тел. +7(495) 666-02-66</p>
+          <a href="tel:+74956660266">Тел. +7(495) 666-02-66</a>
         </div>
 
         <div class="footer-social">
@@ -179,7 +183,7 @@
         </p>
 
       </footer>
-  </div>
-    <script type="text/javascript" src="js/FindForm.js"></script>
+    </div>
+    <script src="js/FindForm.js"></script> <!-- type="text/javascript" -->
   </body>
 </html>
